@@ -36,7 +36,7 @@ export function InitialSection() {
           end: '+=300vh',
           scrub: true,
         },
-        scale: 0.5,
+        scale: 0.3,
         y: "100vw",
       }); 
 
