@@ -15,7 +15,7 @@ const OurRoutes = () => {
    return(
        <BrowserRouter>
         <Routes>
-           <Route element = { <Main />  }  path="/" />
+           <Route element = { <Main />  }  path="/hack-nasa" />
            <Route element = { <Question1/>} path="/quiz"/>
            <Route element = { <Question2/>} path="/q2"/>
            <Route element = { <Question3/> } path="/q3"/>
