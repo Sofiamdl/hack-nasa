@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/hack-nasa/static/css/main.2e411b45.css",
+    "main.js": "/hack-nasa/static/js/main.d770f82f.js",
+    "static/media/gastronomic.png": "/hack-nasa/static/media/gastronomic.68486e6d3c35f15bcee1.png",
+    "static/media/historian.png": "/hack-nasa/static/media/historian.f46b84cf15c7b12889ff.png",
+    "static/media/artistic.png": "/hack-nasa/static/media/artistic.d0c2b81988327d285c19.png",
+    "static/media/foto3.png": "/hack-nasa/static/media/foto3.03507fc6a9d6b99018fd.png",
+    "static/media/foto1.png": "/hack-nasa/static/media/foto1.04a8e8b63c316c751a13.png",
+    "static/media/foto2.png": "/hack-nasa/static/media/foto2.75136d517ac3c02266b4.png",
+    "static/media/lastPlanet.png": "/hack-nasa/static/media/lastPlanet.9b0351b35744ad3c3e6c.png",
+    "static/media/right.png": "/hack-nasa/static/media/right.541ec37052419e155f77.png",
+    "static/media/left.png": "/hack-nasa/static/media/left.baea897be1c9329eb923.png",
+    "static/media/bg.png": "/hack-nasa/static/media/bg.71c6c60d846afc1ce128.png",
+    "static/media/tarotj.png": "/hack-nasa/static/media/tarotj.dc541a5244651371d18a.png",
+    "static/media/planeta.png": "/hack-nasa/static/media/planeta.50e0551f1b73783113ba.png",
+    "static/media/right-card.png": "/hack-nasa/static/media/right-card.36acb36a7e497ae9c0be.png",
+    "static/media/left-card.png": "/hack-nasa/static/media/left-card.cd0777f0fbe696ac48c7.png",
+    "static/media/lastPlanet2.png": "/hack-nasa/static/media/lastPlanet2.137814dbfa903116f229.png",
+    "static/media/passport1.png": "/hack-nasa/static/media/passport1.9fdde664b85beaa611ec.png",
+    "static/media/passport3.png": "/hack-nasa/static/media/passport3.666fc5ae2f081aea38e6.png",
+    "static/media/passport2.png": "/hack-nasa/static/media/passport2.0d93f5bf1b0f57af28ba.png",
+    "static/media/rocket.png": "/hack-nasa/static/media/rocket.b51371820689f064e0b3.png",
+    "static/media/Esoris.otf": "/hack-nasa/static/media/Esoris.ce0dcc11a5a96a556cda.otf",
+    "index.html": "/hack-nasa/index.html",
+    "main.2e411b45.css.map": "/hack-nasa/static/css/main.2e411b45.css.map",
+    "main.d770f82f.js.map": "/hack-nasa/static/js/main.d770f82f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e411b45.css",
+    "static/js/main.d770f82f.js"
+  ]
+}
