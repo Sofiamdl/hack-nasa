@@ -5,7 +5,7 @@ import Passport1 from "../../../assets/newAssets/passport1.png";
 import Passport2 from "../../../assets/newAssets/passport2.png";
 import Passport3 from "../../../assets/newAssets/passport3.png";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
-import { Link ,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export function Passports() {
   const navigate = useNavigate();

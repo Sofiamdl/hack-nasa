@@ -113,7 +113,7 @@ export function InitialSection() {
 
   return(
     <div className="initial-section-background">
-        <Stars />
+      <Stars />
       <div className="new-planets">
         <Planet />
         <Planet2 />
@@ -132,7 +132,7 @@ export function InitialSection() {
         <Link to="/quiz">
           <div className="ballon-text-container">
             <img src={Ballon} className="ballon-speak" />
-            { typerTrigger && <ReactRotatingText className="write-words" typingInterval="50" items={["TAKE THE QUIZ"]} />}
+            { typerTrigger && <ReactRotatingText className="write-words" typingInterval={50} items={["TAKE THE QUIZ"]} />}
           </div>
           </Link>
         </div>

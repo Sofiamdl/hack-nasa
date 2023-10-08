@@ -2,6 +2,7 @@
   position:absolute;
   background:black;
   z-index: 3;
+  height: 1px !important;
 }
 
 .star {
