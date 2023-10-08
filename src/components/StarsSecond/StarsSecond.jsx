@@ -17,7 +17,7 @@ export function StarsSecond() {
   const frag = document.createDocumentFragment();
 
   const width = window.innerWidth ;
-  const height = window.innerHeight*1.3 ;
+  const height = window.innerHeight;
   const appearMin = 0.3;
   const appearMax = 0.8;
 

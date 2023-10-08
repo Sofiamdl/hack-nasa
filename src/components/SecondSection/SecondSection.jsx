@@ -23,7 +23,7 @@ export function SecondSection({ someText }) {
     <VideosAnimation />
     <h2 className="longevity-title bottom-margin"> JOIN US</h2>
     <div className="go-bottom">
-      <Planet />
+      {/* <Planet /> */}
     </div>
     <StarsSecond/>
 
