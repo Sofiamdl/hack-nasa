@@ -83,9 +83,9 @@
       transform: scale(1.1);
   }
 }
-.ballon-text-container:hover {
+/* .ballon-text-container:hover {
   scale: 1.1;
-}
+} */
 
 .next-title-initial-screen {
   opacity: 0;
