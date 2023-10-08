@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Question1.css';
 import Cursor from "../../components/CustomCursor/index"
 import LastPlanet from "../../newassets/lastPlanet.png"
 import LastPlanet1 from "../../newassets/lastPlanet2.png"
 import {useNavigate} from 'react-router-dom';
+import gsap from 'gsap';
 
 
 function Question4() {
@@ -26,6 +27,55 @@ function Question4() {
   const handleOptionSelected = (option) => {
     setSelectedOption(option);
   };
+
+  useEffect(() => {
+    addEventListener()
+  }, []);
+
+  const addEventListener = () => {
+    const left = document.getElementById('left')
+    const right = document.getElementById('right')
+
+    left.addEventListener("mouseenter", () => {
+      gsap.to("#left-planet", {
+        x: "-30px",
+        y: "-70px",
+        scrubs: true,
+        rotate:  15,
+        duration: 2,
+      })
+    });
+
+    left.addEventListener("mouseleave", () => {
+      gsap.to("#left-planet", {
+        x:  "0px",
+        y: "0px",
+        rotate: -15,
+        duration: 2
+      })
+    })
+
+    right.addEventListener("mouseenter", () => {
+      gsap.to("#right-planet", {
+        x: "30px",
+        y: "-70px",
+        scrubs: true,
+        rotate:  15,
+        duration: 2,
+      })
+    });
+
+    right.addEventListener("mouseleave", () => {
+      gsap.to("#right-planet", {
+        x:  "0px",
+        y: "0px",
+        rotate: -15,
+        duration: 2
+      })
+    })
+
+    
+  }; 
   
 
   return (
@@ -36,9 +86,9 @@ function Question4() {
 
         <div className='image-container'>
 
-          <img src={LastPlanet1} alt='planet' />
+          <img src={LastPlanet1} alt='planet' id='left-planet'/>
 
-          <div className="options">
+          <div className="options" id="left">
             
             <div
               key={options[1]}
@@ -54,11 +104,11 @@ function Question4() {
 
         <h1>or</h1>
 
-        <div className='image-container'>
+        <div className='image-container' >
 
-          <img src={LastPlanet} alt='planet' />
+          <img src={LastPlanet} alt='planet' id="right-planet"/>
 
-          <div className="options">
+          <div className="options" id='right'>
             <div
               key={options[0]}
               className={`option ${selectedOption === options[0] ? 'selected' : ''}`}
