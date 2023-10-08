@@ -5,6 +5,7 @@ import Passport1 from "../../../assets/newAssets/passport1.png";
 import Passport2 from "../../../assets/newAssets/passport2.png";
 import Passport3 from "../../../assets/newAssets/passport3.png";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
+import { Link } from 'react-router-dom';
 
 export function Passports() {
   return (
@@ -14,17 +15,23 @@ export function Passports() {
         <div className="passport-container">
           <img src={Passport1} className="first-passport"/>
           <h1 className="desc-passports">HISTORICAL</h1>
-          <DownloadButton></DownloadButton>
+          <Link to="/historical">
+            <DownloadButton></DownloadButton>
+          </Link>
         </div>
         <div className="passport-container">
          <img src={Passport2} className="first-passport"/>
          <h1 className="desc-passports">GASTRONOMIC</h1>
-         <DownloadButton></DownloadButton>
+         <Link to="/gastronomic">
+          <DownloadButton></DownloadButton>
+         </Link>
         </div>
         <div className="passport-container">
           <img src={Passport3} className="first-passport"/>
           <h1 className="desc-passports">ARTISTIC</h1>
-          <DownloadButton></DownloadButton>
+          <Link to="/artistic">
+            <DownloadButton></DownloadButton>
+          </Link>
         </div>
       </div>
     </div>

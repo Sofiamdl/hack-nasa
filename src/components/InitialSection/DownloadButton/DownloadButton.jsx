@@ -3,11 +3,11 @@ import { gsap, Linear, Sine } from "gsap";
 import "./styles.css";
 import Rocket from "../../../assets/newAssets/rocket.png";
 
-export function DownloadButton({ onClick }) {
+export function DownloadButton() {
   return (
-    <button className="download-button" onClick={onClick}>
-      Download
-    </button>
+      <div className="download-button">
+        Download
+      </div>
   )
 }
 

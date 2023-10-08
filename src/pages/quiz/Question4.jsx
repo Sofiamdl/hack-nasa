@@ -3,15 +3,30 @@ import './Question1.css';
 import Cursor from "../../components/CustomCursor/index"
 import LastPlanet from "../../newassets/lastPlanet.png"
 import LastPlanet1 from "../../newassets/lastPlanet2.png"
+import {useNavigate} from 'react-router-dom';
 
 
 function Question4() {
   const options = ['Methodic', 'Freestyle'];
   const [selectedOption, setSelectedOption] = useState('');
+  const navigate = useNavigate();
+
+  const routes = ["/artistic", "/gastronomic", "/historian"]
+  const randomNumberInRange = (min, max) => { 
+    const random  = Math.floor(Math.random()  
+            * (max - min + 1)) + min; 
+    console.log(random)
+    return  random
+  }; 
+
+  const randomRoute = randomNumberInRange(0, 2);
+
+  const handleOnClick = () => navigate(routes[randomRoute]);
 
   const handleOptionSelected = (option) => {
     setSelectedOption(option);
   };
+  
 
   return (
     <div className="container">
@@ -24,10 +39,13 @@ function Question4() {
           <img src={LastPlanet1} alt='planet' />
 
           <div className="options">
+            
             <div
               key={options[1]}
               className={`option ${selectedOption === options[1] ? 'selected' : ''}`}
-              onClick={() => handleOptionSelected(options[1])}
+              // onClick={() => handleOptionSelected(options[1])
+              onClick={() => handleOnClick()
+              }
             >
               {options[1]}
             </div>
@@ -44,7 +62,9 @@ function Question4() {
             <div
               key={options[0]}
               className={`option ${selectedOption === options[0] ? 'selected' : ''}`}
-              onClick={() => handleOptionSelected(options[0])}
+              // onClick={() => handleOptionSelected(options[1])
+              onClick={() => handleOnClick()
+            }
             >
               {options[0]}
             </div>

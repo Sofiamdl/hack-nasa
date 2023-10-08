@@ -118,7 +118,7 @@ export function InitialSection() {
         <Planet />
         <Planet2 />
         <Planet3 />
-        <h1 className="title-initial-screen">LUNARES</h1>
+        <h1 className="title-initial-screen">GALACWAY</h1>
         <h2 className="subtitle-initial-screen">Your way to navigate the universe</h2>
 
       </div>

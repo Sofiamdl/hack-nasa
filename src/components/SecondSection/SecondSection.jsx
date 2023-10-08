@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import "./styles.css";
 import { StarsSecond } from "../StarsSecond/StarsSecond";
 import { VideosAnimation } from "./VideosAnimation/VideosAnimation";
-
+import { Planet } from "../InitialSection/Planet/Planet";
 export function SecondSection({ someText }) {
   const backgroundRef = useRef(null);
 
@@ -19,10 +19,14 @@ export function SecondSection({ someText }) {
   
   return(
   <div ref={backgroundRef} className="background-second-section">
-    <StarsSecond/>
-    <h2 className="longevity-title text-animation"> FOTOS REAIS </h2>
-
+    <h2 className="longevity-title"> landscapes that you will find along the way</h2>
     <VideosAnimation />
+    <h2 className="longevity-title bottom-margin"> JOIN US</h2>
+    <div className="go-bottom">
+      <Planet />
+    </div>
+    <StarsSecond/>
+
   </div>
     
   )
