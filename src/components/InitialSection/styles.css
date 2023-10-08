@@ -1,0 +1,113 @@
+.initial-section-background {
+  width: 100vw;
+  height: 350vh;
+}
+
+.background-initial-screen {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.initial-section-background-image-left, .initial-section-background-image-right {
+  width: 50vw;
+}
+
+.new-planets {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.rocket-up-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.ballon-speak {
+  margin-top: 5vw;
+  width: 20vw;
+  opacity: 0;
+}
+
+.spacer-initial-section {
+  width: 30vw;
+}
+
+.write-words{
+  color: black;
+  position: absolute;
+  justify-self: left;
+  width: 12vw;
+  margin: 5vw 0 0 -1vw;
+  font-family: 'Esoris';
+  font-size: 1.4vw;
+}
+
+.title-initial-screen {
+  font-family: 'Esoris';
+  font-size: 7vw;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  z-index: 1000000;
+  margin-bottom: 8vw;
+  letter-spacing: 0.4vw;
+}
+
+.ballon-text-container {
+  width: 30vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  letter-spacing: 0px;
+  
+}
+
+.ballon-text-container:hover {
+  scale: 1.1;
+}
+
+.next-title-initial-screen {
+  opacity: 0;
+  font-family: 'Esoris';
+  font-size: 4vw;
+  color: white;
+  z-index: 1000000;
+  /* margin-bottom: 20vw; */
+  width: 80vw;
+  letter-spacing: 0.4vw;
+}
+
+.title-initial-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+}
+
+.subtitle-initial-screen {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  bottom: 0;
+  position: absolute;
+  letter-spacing: 5px;
+  z-index: 1000000;
+  margin-bottom: 4vw;
+}

@@ -1,0 +1,48 @@
+.first-passport {
+  height: 45vh;
+  z-index: -1000;
+
+}
+
+.images-passports {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  z-index: -1000;
+  width: 90vw;
+
+}
+
+.title-passports {
+  font-family: 'Esoris';
+  font-size: 2vw;
+  color: white;
+  margin-bottom: 5vh;
+  z-index: -1000;
+
+}
+
+.geral-container-passport {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50vh;
+  width: 100vw;
+}
+
+.passport-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.desc-passports {
+  font-family: 'Esoris';
+  font-size: 2vw;
+  color: white;
+  z-index: -1000;
+  margin-top: 5vh;
+
+}

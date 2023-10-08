@@ -1,0 +1,170 @@
+.background-second-section {
+  width: 100vw;
+  height: 100vw;
+  z-index: 10;
+  background-color: #151A32;
+  position:relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.longevity-letter {
+  height: 3.4vw;
+}
+
+.pill-container {
+  position: absolute;
+  left: 6vw;
+  margin-top: 35vw;
+  width: 4vw;
+}
+
+.second-pill-container {
+  position: absolute;
+  left: 14vw;
+  margin-top: 135vw;
+  width: 5vw;
+
+}
+
+.third-pill-container {
+  position: absolute;
+  right: 5vw;
+  margin-top: 70vw;
+  width: 4vw;
+}
+
+.longevity-title {
+  border: none;
+  /* position: absolute; */
+  font-family: 'Esoris';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  text-align: center;
+  letter-spacing: 0.335em;
+  background: linear-gradient(to right, #4d4d4d 0, white 40%, #4d4d4d 80%);
+  /* background: linear-gradient(92.12deg, #FFFFFF 18.52%, rgba(255, 255, 255, 0.51) 26.1%, #FFFFFF 39.08%, #FFFFFF 62.07%, rgba(255, 255, 255, 0.47) 71.78%, #FFFFFF 85.73%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 4vw;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap
+}
+@media only screen and (min-width: 901px) {
+  .longevity-title {
+    animation: shine 3s infinite linear;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .longevity-title {
+    animation: shine-mobile 3s infinite linear;
+  }
+}
+
+.longevity-subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  margin-top: 5vw;
+  text-align: center;
+  letter-spacing: 0.28em;
+  width: 40vw ;
+
+  color: #FFFFFF;
+}
+
+.longevity-subtitle-bold {
+  font-weight: 600;
+  display: inline
+}
+
+.shadow-right{
+  position: absolute;
+  right: 0;
+  margin-top: 14.5vw;
+  width: 35vw;
+}
+
+.shadow-left{
+  position: absolute;
+  left: 0;
+  margin-top: 56vw;
+  width: 30vw;
+}
+
+.background-second-section > .orbit-container {
+  position: absolute;
+  right: 6vw;
+  margin-top: 35vw;
+}
+
+.top-container-second-section {
+  height: 100vh;
+  position: relative;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .shadow-right, .shadow-left, .longevity-subtitle{
+    display: none;
+  }
+  .longevity-letter {
+    height: 4.8vw;
+  }
+
+  .longevity-title {
+    font-size: 6.7vw;
+    margin-top: 42vw;
+    width: 78vw;
+  }
+
+  .background-second-section {
+    background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 56.98%);
+    height: 200vw;
+  }
+
+  .second-pill-container {
+    left: 12vw;
+    margin-top: 160vw;
+    width: 7vw;
+  }
+
+  .third-pill-container {
+    position: absolute;
+    right: 7vw;
+    margin-top: 70vw;
+    width: 7vw;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0
+  }
+  /* 80% {
+    background-position: 40vw
+  } */
+  100% {
+    background-position: 60vw
+  }
+}
+
+@keyframes shine-mobile {
+  0% {
+    background-position: 0
+  }
+  /* 80% {
+    background-position: 40vw
+  } */
+  100% {
+    background-position: 79vw
+  }
+}

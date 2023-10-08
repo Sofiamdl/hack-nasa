@@ -1,0 +1,7 @@
+.planet-around-right {
+  position: absolute;
+  z-index: 4;
+  right: 0vw;
+  top: 2vw;
+  width: 14vw;
+}
