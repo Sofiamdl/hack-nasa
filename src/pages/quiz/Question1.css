@@ -112,4 +112,16 @@
   .container-images h1 {
     color: white;
   }
+
+  #left-card {
+    position: relative;
+    left: 40px;
+    top: 12px;
+  }
+
+  #right-card {
+    position: relative;
+    right: 10px;
+    top: 8px;
+  } 
   

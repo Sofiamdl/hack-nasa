@@ -4,6 +4,9 @@ import Cursor from "../../components/CustomCursor/index"
 import Tarot from "../../newassets/tarotj.png"
 import { Link } from 'react-router-dom';
 
+import LeftCard from "../../newassets/left-card.png"
+import RightCard from "../../newassets/right-card.png"
+
 function Question2() {
   const options = ['Chill', 'Adventurous'];
   const [selectedOption, setSelectedOption] = useState('');
@@ -17,7 +20,11 @@ function Question2() {
       <Cursor />
       <h1 className="question">Are you more...</h1>
 
-      <img src={Tarot} alt='tarot'/>
+      <div className='card-images'>
+        <img src={LeftCard} alt="left-card" id='left-card'/> 
+        <img src={RightCard} alt='right-card' id='right-card'/>
+      </div>
+
       <div className="options2">
         {options.map((option) => (
           <Link
