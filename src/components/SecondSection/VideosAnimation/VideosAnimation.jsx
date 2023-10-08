@@ -7,6 +7,39 @@ import Foto3 from "../../../newassets/foto3.png"
 import { ScrollTrigger, Power4 } from "gsap/all";
 
 export function VideosAnimation({ someText }) {
+  
+  const [post, setPosts] = useState();
+  const [post2, setPosts2] = useState();
+  const [post3, setPosts3] = useState();
+
+  useEffect(() => {
+    fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=ZNIMsvLiComqonCqmFQcbaE4fJLFjf6kGaTojyxa')
+       .then((res) => res.json())
+       .then((data) => {
+        setPosts(data.latest_photos[0].img_src);
+      })
+       .catch((err) => {
+          console.log(err.message);
+       });
+       fetch('https://api.nasa.gov/planetary/apod?api_key=ZNIMsvLiComqonCqmFQcbaE4fJLFjf6kGaTojyxa')
+       .then((res) => res.json())
+       .then((data) => {
+        setPosts2(data.hdurl);
+      })
+       .catch((err) => {
+          console.log(err.message);
+       });
+       fetch('https://images-api.nasa.gov/search?q=Nebula&media_type=image')
+       .then((res) => res.json())
+       .then((data) => {
+        // console.log(data.collection.items[0].links[0].href)
+        setPosts3(data.collection.items[0].links[0].href);
+      })
+       .catch((err) => {
+          console.log(err.message);
+       });
+ }, []);
+
   const videoOneRef = useRef(null);
   const divVideoOneRef = useRef(null);
   const videoTwoRef = useRef(null);
@@ -140,7 +173,7 @@ export function VideosAnimation({ someText }) {
     <div ref={videosRef} className="videos-animations-container">
       <div ref={divVideoOneRef} className="video-animations-one">
 
-        <img className="video-one-size" ref={videoOneRef} src={Foto1} />
+        <img className="video-one-size" ref={videoOneRef} src={post2} />
 
 
       </div>
@@ -149,12 +182,12 @@ export function VideosAnimation({ someText }) {
         <div ref={divVideoTwoRef} className="video-animations-two">
 
 
-          <img className="video-two-size" ref={videoTwoRef} src={Foto2} />
+          <img className="video-two-size" ref={videoTwoRef} src={post} />
 
         </div>
         <div ref={divVideoThreeRef} className="video-animations-three" >
 
-          <img className="video-three-size" ref={videoThreeRef} src={Foto3} />
+          <img className="video-three-size" ref={videoThreeRef} src={post3} />
 
         </div>
       </div>

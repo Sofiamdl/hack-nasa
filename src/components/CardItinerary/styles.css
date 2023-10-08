@@ -1,0 +1,34 @@
+.background-card-itinerary {
+  /* padding: 10px; */
+  border-radius: 16px;
+  border: 1px solid #FFF;
+  background: #151A32;
+  display: flex;
+  flex-direction: column;
+  width: fit-content ;
+}
+
+.title-itinerary-card {
+    font-family: 'Esoris';
+    font-size: 1.5vw;
+    color: white;
+    letter-spacing: 0.8vw;
+    width: 30vw;
+    padding: 1vw;
+
+  
+}
+
+.desc-itinerary-card {
+  padding: 1vw;
+
+  width: 30vw;
+  color: #FFF;
+  font-family: 'Montserrat';
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 5px;
+  z-index: 1000000;
+}

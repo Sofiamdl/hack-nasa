@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap, Linear, Sine } from "gsap";
 import "./styles.css";
-import Background from '../../assets/newAssets/background-artistic.png'
+import { CardItinerary } from "../../components/CardItinerary/CardItinerary";
 
 export default function Artistic() {
   return (
@@ -10,6 +10,7 @@ export default function Artistic() {
       <div  className="on-top-of-itinerary" >
        <h1 className="title-itinerary">Artistic itinerary</h1>
       </div>  
+      <CardItinerary title={"Space-Time on Other Worlds"} desc={"This journey will provide a fascinating insight into Einstein's groundbreaking theories."} />
 
     </div>
   )
