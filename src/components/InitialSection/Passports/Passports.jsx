@@ -30,7 +30,6 @@ export function Passports() {
       start: "top top+=200px",
       end: "top top+=200px",
       scrub: true,
-      markers: true
     },
     zIndex: 1,
   }); 
