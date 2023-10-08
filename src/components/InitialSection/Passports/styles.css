@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  z-index: -1000;
+  z-index: -100;
   width: 90vw;
 
 }
@@ -19,8 +19,7 @@
   font-size: 2vw;
   color: white;
   margin-bottom: 5vh;
-  z-index: -1000;
-
+  z-index: -100;
 }
 
 .geral-container-passport {
@@ -42,7 +41,6 @@
   font-family: 'Esoris';
   font-size: 2vw;
   color: white;
-  z-index: -1000;
+  z-index: -100;
   margin-top: 5vh;
-
 }

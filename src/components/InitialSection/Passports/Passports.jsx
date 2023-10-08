@@ -12,6 +12,29 @@ export function Passports() {
 
 
   const handleOnClick = (route) => navigate(route);
+  useEffect(() => {
+
+  gsap.to(".geral-container-passport", { 
+    scrollTrigger:  {
+      trigger: ".geral-container-passport",
+      start: "top  top+=200px",
+      end: "top top+=200px",
+      scrub: true,
+    },
+    zIndex: 1,
+  }); 
+
+  gsap.to(".images-passports", { 
+    scrollTrigger:  {
+      trigger: ".geral-container-passport",
+      start: "top top+=200px",
+      end: "top top+=200px",
+      scrub: true,
+      markers: true
+    },
+    zIndex: 1,
+  }); 
+  }, [])  
 
   return (
     <div className="geral-container-passport">
@@ -19,18 +42,18 @@ export function Passports() {
       <div className="images-passports">
         <div className="passport-container">
           <img src={Passport1} className="first-passport"/>
-          <h1 className="desc-passports">HISTORICAL</h1>
-            <DownloadButton onClick={() => handleOnClick("/historical")}></DownloadButton>
+          <h1 className="desc-passports">HISTORIAN</h1>
+          <DownloadButton onClick={() => handleOnClick("/historian")}></DownloadButton>
         </div>
         <div className="passport-container">
          <img src={Passport2} className="first-passport"/>
          <h1 className="desc-passports">GASTRONOMIC</h1>
-          <DownloadButton onClick={() => handleOnClick("/historical")}></DownloadButton>
+          <DownloadButton onClick={() => handleOnClick("/gastronomic")}></DownloadButton>
         </div>
         <div className="passport-container">
           <img src={Passport3} className="first-passport"/>
           <h1 className="desc-passports">ARTISTIC</h1>
-            <DownloadButton onClick={() => handleOnClick("/historical")}></DownloadButton>
+            <DownloadButton onClick={() => handleOnClick("/artistic")}></DownloadButton>
         </div>
       </div>
     </div>

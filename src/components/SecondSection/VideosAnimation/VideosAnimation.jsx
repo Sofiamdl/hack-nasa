@@ -32,7 +32,6 @@ export function VideosAnimation({ someText }) {
        fetch('https://images-api.nasa.gov/search?q=Nebula&media_type=image')
        .then((res) => res.json())
        .then((data) => {
-        // console.log(data.collection.items[0].links[0].href)
         setPosts3(data.collection.items[0].links[0].href);
       })
        .catch((err) => {
